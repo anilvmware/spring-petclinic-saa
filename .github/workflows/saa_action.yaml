@@ -22,3 +22,9 @@ jobs:
           artifactory_token: ${{ secrets.saa_secret }}
           git_token: ${{ secrets.GITHUB_TOKEN}}
           app_advisor_server: https://saa-747462095514.us-west2.run.app
+      - name: Upload SAA Logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: SAA Logs
+          path: .advisor/**/*
