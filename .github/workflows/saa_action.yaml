@@ -2,7 +2,7 @@ name: spring-app-advisor-workflow
 on:
   push:
     branches:
-      - 'main'
+      - 'advisor-demo'
 jobs:
   app_advisor_job:
     runs-on: ubuntu-latest
