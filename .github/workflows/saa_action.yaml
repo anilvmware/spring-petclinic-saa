@@ -23,6 +23,7 @@ jobs:
           git_token: ${{ secrets.GITHUB_TOKEN}}
           app_advisor_server: https://saa-747462095514.us-west2.run.app
           email: anil-an.nair@broadcom.com
+          build_tool: gradle
       - name: Upload SAA Logs
         if: always()
         uses: actions/upload-artifact@v4
